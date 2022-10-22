@@ -1,38 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+}
 .App {
-  text-align: center;
+   margin: 10px;
+   text-align: left;
+}
+.bg {
+   width: 460px;
+   border-radius: 16px;
+   background-size: cover;
+}
+.cont {
+   padding: 15px 5px;
+   display: flex;
+   align-items: center;
+   background: rgba(255, 255, 255, 0.21);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(9.6px);
+   -webkit-backdrop-filter: blur(9.6px);
+   border: 1px solid rgba(255, 255, 255, 0.31);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.album-cover img {
+   width: 140px;
+   margin: 0 60px 0 20px;
+   border-radius: 10px;
+   box-shadow: 16px 14px 24px 4px rgba(0, 0, 0, 0.46);
+   -webkit-box-shadow: 16px 14px 24px 4px rgba(0, 0, 0, 0.46);
+   -moz-box-shadow: 16px 14px 24px 4px rgba(0, 0, 0, 0.46);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.music-info {
+   color: #0f0f0f;
+   width: 200px;
+   overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.track {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   margin-bottom: 10px;
+   display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes animate {
+   100% {
+      transform: translate(-100%, 0);
+   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.artist {
+   overflow: hidden;
+   font-style: italic;
 }
